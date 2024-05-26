@@ -1,0 +1,9 @@
+{
+    "poll_interval": 45,
+    "subdomain": "mydomains.mycollab.com",
+    "biids": {
+        "pfZAtrpFwKG5wFILrKqimvzFZiFj2bVaRwWkrg4R//s=":["saawvasvdsadvd.mydomains.mycollab.com","saawsadfeasvdsadvd.mydomains.mycollab.com"],
+        "IONqSYhK0yYhF0PZOGaPdPAHu4J8dRFZCiQsTxa8ld4=":["saaw4dsadd3.mydomains.mycollab.com","c3wc3fasdv3dy.mydomains.mycollab.com"]
+    },
+    "output":"logfile.txt"
+}
