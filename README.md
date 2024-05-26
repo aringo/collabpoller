@@ -52,7 +52,7 @@ That should be enough for the config.  You can close and reopen Burp to capture 
 
 * poll_interval - time to wait when running in poll mode to check for new requests
 * subdomain - the domain URL to poll against 
-* biids - this shoudl be your biid and any generated ids 
+* biids - this should be your biid and any generated ids 
 * output - this is where to log raw JSON responses returned, blank won't log.  
 
 ```
