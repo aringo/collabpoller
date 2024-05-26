@@ -9,11 +9,12 @@ One day you may be constrained to only having an organizations [Burp Collaborato
 
 <p align="center">
   <a href="#Capture-biids">Capture Biids</a> •
-  <a href="#The-config">Config</a> •
-  <a href="#install">Install</a> •
-  <a href="#running">Running</a> •
+  <a href="#Config Setup">Config</a> •
+  <a href="#Install">Install</a> •
+  <a href="#Running-CLI">Running CLI </a> •
   <a href="#Using-in-your-own-scripts">Using in a script</a> •
- 
+
+----
 
 ## Setup Overview 
 
@@ -25,7 +26,7 @@ From [Persistent Access to Burp Suite Sessions A Simple Guide](https://www.onsec
 
 * When polling for interactions, Collaborator’s server then regenerates the list of Collaborator domains from the secret key, and returns the interactions it has recorded against those subdomains. This opens the possibility of capturing a Collaborator secret key and using it to poll for interactions made against links generated from that secret key.
 
-# Capture biids
+## Capture biids
 
 Polling is accomplished with a generated biid. To get a biid make sure to configure Burp Collaborator to use a private domain and set the polling to HTTP only.   
 
@@ -47,7 +48,7 @@ Hit __Copy to clipboard__ several times and put the domains in a text file. Afte
 ```
 That should be enough for the config.  You can close and reopen Burp to capture additional biid or domain values.
 
-# The config 
+## Config Setup 
 
 * poll_interval - time to wait when running in poll mode to check for new requests
 * subdomain - the domain URL to poll against 
@@ -66,14 +67,14 @@ That should be enough for the config.  You can close and reopen Burp to capture 
 }
 ```
 
-# Install
+## Install
 ```
 git clone https://github.com/aringo/collabpoller.git
 cd collabpoller
 pip3 install .
 ```
 
-# Running 
+## Running CLI  
 
 ### pull a domain from the config to test with
 ```
@@ -119,7 +120,7 @@ poller.start_polling()
     </tr>
     <tr>
         <td align="center">
-            If you use Portswiggers Collaborator servers purchase a license, otherwise it's theft of service. This is for personal collaborator servers.  
+            If you use Portswiggers servers you should purchase a license since those are for customer use
         </td>
     </tr>
 </table>
