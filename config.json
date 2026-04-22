@@ -1,0 +1,5 @@
+{
+    "poll_interval": 45,
+    "subdomain": "mydomains.mycollab.com",
+    "output": "logfile.txt"
+}
